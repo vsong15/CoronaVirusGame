@@ -1,0 +1,365 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Zombie.tscn" type="PackedScene" id=2]
+[ext_resource path="res://PauseScreen.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Main Game Sound-[AudioTrimmer.com].wav" type="AudioStream" id=5]
+[ext_resource path="res://World.gd" type="Script" id=6]
+[ext_resource path="res://test.gd" type="Script" id=7]
+
+[node name="World" type="Node2D"]
+position = Vector2( -13.6992, 13.6991 )
+script = ExtResource( 6 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -247.0
+margin_top = -193.0
+margin_right = 1541.0
+margin_bottom = 850.0
+color = Color( 0.156863, 0.0431373, 0.560784, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 554.402, 354.04 )
+
+[node name="Zombie" parent="." instance=ExtResource( 2 )]
+position = Vector2( 118.256, 699.647 )
+
+[node name="Zombie2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 94.1841, 68.1954 )
+
+[node name="ZombieWithKey" parent="." instance=ExtResource( 2 )]
+modulate = Color( 0.831373, 0.686275, 0.215686, 1 )
+position = Vector2( -13857.3, 13607.1 )
+script = ExtResource( 7 )
+
+[node name="Zombie4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 540.835, -24.9381 )
+
+[node name="Zombie6" parent="." instance=ExtResource( 2 )]
+position = Vector2( 982.383, 257.324 )
+
+[node name="Zombie9" parent="." instance=ExtResource( 2 )]
+position = Vector2( -6539.77, -996.845 )
+
+[node name="Zombie10" parent="." instance=ExtResource( 2 )]
+position = Vector2( 422.504, 805.478 )
+
+[node name="Zombie12" parent="." instance=ExtResource( 2 )]
+position = Vector2( 902.009, 622.188 )
+
+[node name="Zombie14" parent="." instance=ExtResource( 2 )]
+position = Vector2( -235.617, 1486.21 )
+
+[node name="Zombie25" parent="." instance=ExtResource( 2 )]
+position = Vector2( -739.628, 910.195 )
+
+[node name="Zombie26" parent="." instance=ExtResource( 2 )]
+position = Vector2( -11679, 602.029 )
+
+[node name="Zombie24" parent="." instance=ExtResource( 2 )]
+position = Vector2( -638.826, -83.4279 )
+
+[node name="Zombie23" parent="." instance=ExtResource( 2 )]
+position = Vector2( -192.416, -544.239 )
+
+[node name="Zombie27" parent="." instance=ExtResource( 2 )]
+position = Vector2( 2898.31, -1792.13 )
+
+[node name="Zombie52" parent="." instance=ExtResource( 2 )]
+position = Vector2( 2898.31, -1792.13 )
+
+[node name="Zombie48" parent="." instance=ExtResource( 2 )]
+position = Vector2( -987.012, -1729.96 )
+
+[node name="Zombie54" parent="." instance=ExtResource( 2 )]
+position = Vector2( -987.012, -1729.96 )
+
+[node name="Zombie49" parent="." instance=ExtResource( 2 )]
+position = Vector2( 629.284, -1823.21 )
+
+[node name="Zombie53" parent="." instance=ExtResource( 2 )]
+position = Vector2( 629.284, -1823.21 )
+
+[node name="Zombie47" parent="." instance=ExtResource( 2 )]
+position = Vector2( 3271.3, -673.154 )
+
+[node name="Zombie51" parent="." instance=ExtResource( 2 )]
+position = Vector2( 3271.3, -673.154 )
+
+[node name="Zombie28" parent="." instance=ExtResource( 2 )]
+position = Vector2( -2590.87, -864.032 )
+
+[node name="Zombie55" parent="." instance=ExtResource( 2 )]
+position = Vector2( -2590.87, -864.032 )
+
+[node name="Zombie29" parent="." instance=ExtResource( 2 )]
+position = Vector2( -3230.45, 2573.75 )
+
+[node name="Zombie30" parent="." instance=ExtResource( 2 )]
+position = Vector2( -2910.66, 4385.91 )
+
+[node name="Zombie31" parent="." instance=ExtResource( 2 )]
+position = Vector2( 2050.57, 4887.81 )
+
+[node name="Zombie65" parent="." instance=ExtResource( 2 )]
+position = Vector2( 6422.25, 4945.34 )
+
+[node name="Zombie66" parent="." instance=ExtResource( 2 )]
+position = Vector2( 6077.11, 6901.08 )
+
+[node name="Zombie32" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1273.3, 4892.25 )
+
+[node name="Zombie63" parent="." instance=ExtResource( 2 )]
+position = Vector2( 768.367, 6435.11 )
+
+[node name="Zombie64" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1963.57, 7595.78 )
+
+[node name="Zombie33" parent="." instance=ExtResource( 2 )]
+position = Vector2( -3432.89, 16410.4 )
+
+[node name="Zombie61" parent="." instance=ExtResource( 2 )]
+position = Vector2( -8429.42, 2657.33 )
+
+[node name="Zombie67" parent="." instance=ExtResource( 2 )]
+position = Vector2( -6991.37, 356.454 )
+
+[node name="Zombie68" parent="." instance=ExtResource( 2 )]
+position = Vector2( -5955.98, 3692.73 )
+
+[node name="Zombie69" parent="." instance=ExtResource( 2 )]
+position = Vector2( -5323.24, 6798.92 )
+
+[node name="Zombie70" parent="." instance=ExtResource( 2 )]
+position = Vector2( -4978.1, -2289.56 )
+
+[node name="Zombie71" parent="." instance=ExtResource( 2 )]
+position = Vector2( 428.967, -4187.79 )
+
+[node name="Zombie73" parent="." instance=ExtResource( 2 )]
+position = Vector2( -2389.61, -3555.04 )
+
+[node name="Zombie83" parent="." instance=ExtResource( 2 )]
+position = Vector2( 9059.81, 9212.3 )
+
+[node name="Zombie87" parent="." instance=ExtResource( 2 )]
+position = Vector2( 12766.5, 9212.3 )
+
+[node name="Zombie88" parent="." instance=ExtResource( 2 )]
+position = Vector2( 15731.8, 6823.58 )
+
+[node name="Zombie89" parent="." instance=ExtResource( 2 )]
+position = Vector2( 15896.5, 10200.7 )
+
+[node name="Zombie90" parent="." instance=ExtResource( 2 )]
+position = Vector2( 12684.1, 13577.9 )
+
+[node name="Zombie91" parent="." instance=ExtResource( 2 )]
+position = Vector2( 8895.08, 12671.8 )
+
+[node name="Zombie92" parent="." instance=ExtResource( 2 )]
+position = Vector2( 15716.2, 4025.34 )
+
+[node name="Zombie93" parent="." instance=ExtResource( 2 )]
+position = Vector2( 12930.1, 1047.1 )
+
+[node name="Zombie94" parent="." instance=ExtResource( 2 )]
+position = Vector2( 13314.4, -1931.14 )
+
+[node name="Zombie95" parent="." instance=ExtResource( 2 )]
+position = Vector2( 13794.8, -4525.09 )
+
+[node name="Zombie96" parent="." instance=ExtResource( 2 )]
+position = Vector2( 11777.2, -5966.18 )
+
+[node name="Zombie97" parent="." instance=ExtResource( 2 )]
+position = Vector2( 9567.58, -7022.97 )
+
+[node name="Zombie98" parent="." instance=ExtResource( 2 )]
+position = Vector2( 6589.34, -7983.69 )
+
+[node name="Zombie99" parent="." instance=ExtResource( 2 )]
+position = Vector2( 2746.45, -8752.27 )
+
+[node name="Zombie100" parent="." instance=ExtResource( 2 )]
+position = Vector2( -808.229, -9040.49 )
+
+[node name="Zombie101" parent="." instance=ExtResource( 2 )]
+position = Vector2( -5035.41, -8848.35 )
+
+[node name="Zombie102" parent="." instance=ExtResource( 2 )]
+position = Vector2( -9742.95, -6542.61 )
+
+[node name="Zombie103" parent="." instance=ExtResource( 2 )]
+position = Vector2( -10799.7, -4044.73 )
+
+[node name="Zombie104" parent="." instance=ExtResource( 2 )]
+position = Vector2( -12240.8, -2219.36 )
+
+[node name="Zombie105" parent="." instance=ExtResource( 2 )]
+position = Vector2( -13778, 758.883 )
+
+[node name="Zombie106" parent="." instance=ExtResource( 2 )]
+position = Vector2( -15699.4, 3544.98 )
+
+[node name="Zombie107" parent="." instance=ExtResource( 2 )]
+position = Vector2( -14258.3, 7868.23 )
+
+[node name="Zombie108" parent="." instance=ExtResource( 2 )]
+position = Vector2( -10415.5, 11615 )
+
+[node name="Zombie84" parent="." instance=ExtResource( 2 )]
+position = Vector2( 4611.84, 11106.8 )
+
+[node name="Zombie85" parent="." instance=ExtResource( 2 )]
+position = Vector2( -1730.65, 9541.78 )
+
+[node name="Zombie86" parent="." instance=ExtResource( 2 )]
+position = Vector2( -6261, 11353.9 )
+
+[node name="Zombie74" parent="." instance=ExtResource( 2 )]
+position = Vector2( 9172.32, 1679.46 )
+
+[node name="Zombie75" parent="." instance=ExtResource( 2 )]
+position = Vector2( 8597.1, -736.465 )
+
+[node name="Zombie76" parent="." instance=ExtResource( 2 )]
+position = Vector2( 6813.91, -2519.65 )
+
+[node name="Zombie77" parent="." instance=ExtResource( 2 )]
+position = Vector2( 4800.64, -5625.84 )
+
+[node name="Zombie78" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1809.5, -5855.92 )
+
+[node name="Zombie79" parent="." instance=ExtResource( 2 )]
+position = Vector2( -9694.91, -678.942 )
+
+[node name="Zombie80" parent="." instance=ExtResource( 2 )]
+position = Vector2( -8371.9, -2289.56 )
+
+[node name="Zombie81" parent="." instance=ExtResource( 2 )]
+position = Vector2( -7394.03, -4245.31 )
+
+[node name="Zombie82" parent="." instance=ExtResource( 2 )]
+position = Vector2( -3137.4, -5568.32 )
+
+[node name="Zombie72" parent="." instance=ExtResource( 2 )]
+position = Vector2( 3477.63, -4187.79 )
+
+[node name="Zombie62" parent="." instance=ExtResource( 2 )]
+position = Vector2( -1009.08, 6798.92 )
+
+[node name="Zombie34" parent="." instance=ExtResource( 2 )]
+position = Vector2( -592.158, 4412.56 )
+
+[node name="Zombie59" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1233.22, 14596.2 )
+
+[node name="Zombie60" parent="." instance=ExtResource( 2 )]
+position = Vector2( -1456.81, 12674.8 )
+
+[node name="Zombie35" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1840.76, 3522.11 )
+
+[node name="Zombie36" parent="." instance=ExtResource( 2 )]
+position = Vector2( 2988.24, 2154.54 )
+
+[node name="Zombie37" parent="." instance=ExtResource( 2 )]
+position = Vector2( 868.371, 3451.39 )
+
+[node name="Zombie38" parent="." instance=ExtResource( 2 )]
+position = Vector2( 3783.95, 2945.57 )
+
+[node name="Zombie39" parent="." instance=ExtResource( 2 )]
+position = Vector2( -3400.88, 1178.52 )
+
+[node name="Zombie56" parent="." instance=ExtResource( 2 )]
+position = Vector2( -3400.88, 1178.52 )
+
+[node name="Zombie40" parent="." instance=ExtResource( 2 )]
+position = Vector2( -6981.66, 14081.1 )
+
+[node name="Zombie58" parent="." instance=ExtResource( 2 )]
+position = Vector2( 6180.24, 16579 )
+
+[node name="Zombie41" parent="." instance=ExtResource( 2 )]
+position = Vector2( -2090.38, 2875.63 )
+
+[node name="Zombie57" parent="." instance=ExtResource( 2 )]
+position = Vector2( -2090.38, 2875.63 )
+
+[node name="Zombie42" parent="." instance=ExtResource( 2 )]
+position = Vector2( 6528.29, 2307.93 )
+
+[node name="Zombie43" parent="." instance=ExtResource( 2 )]
+position = Vector2( 4769.41, -646.339 )
+
+[node name="Zombie44" parent="." instance=ExtResource( 2 )]
+position = Vector2( 3916.21, 927.187 )
+
+[node name="Zombie50" parent="." instance=ExtResource( 2 )]
+position = Vector2( 11329.5, -3191.31 )
+
+[node name="Zombie45" parent="." instance=ExtResource( 2 )]
+position = Vector2( 5687.92, 1448.18 )
+
+[node name="Zombie46" parent="." instance=ExtResource( 2 )]
+position = Vector2( 6209.76, 251.078 )
+
+[node name="Zombie22" parent="." instance=ExtResource( 2 )]
+position = Vector2( 12261.8, 4722.11 )
+
+[node name="Zombie20" parent="." instance=ExtResource( 2 )]
+position = Vector2( -12254.5, 8667.21 )
+
+[node name="Zombie21" parent="." instance=ExtResource( 2 )]
+position = Vector2( -8912.36, 6120.55 )
+
+[node name="Zombie17" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1950.45, 237.215 )
+
+[node name="Zombie19" parent="." instance=ExtResource( 2 )]
+position = Vector2( 7757.3, -5004.47 )
+
+[node name="Zombie18" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1803.01, 1170.98 )
+
+[node name="Zombie16" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1105.19, 1823.88 )
+
+[node name="Zombie15" parent="." instance=ExtResource( 2 )]
+position = Vector2( 396.118, 1622.22 )
+
+[node name="Zombie13" parent="." instance=ExtResource( 2 )]
+position = Vector2( 694.295, 785.963 )
+
+[node name="Zombie11" parent="." instance=ExtResource( 2 )]
+position = Vector2( 4250.74, 5285.79 )
+
+[node name="Zombie8" parent="." instance=ExtResource( 2 )]
+position = Vector2( -11511.4, 2114.1 )
+
+[node name="Zombie7" parent="." instance=ExtResource( 2 )]
+position = Vector2( 16308.7, 3.15318 )
+
+[node name="Zombie5" parent="." instance=ExtResource( 2 )]
+position = Vector2( -14350.9, 5198.16 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PauseScreen" parent="CanvasLayer" instance=ExtResource( 3 )]
+visible = false
+margin_left = -3.42468
+margin_top = -3.4248
+margin_right = 36.5753
+margin_bottom = 36.5752
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = 6.0
+autoplay = true

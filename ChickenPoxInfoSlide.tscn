@@ -1,0 +1,111 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Button3.gd" type="Script" id=1]
+[ext_resource path="res://Chicken Pox.png" type="Texture" id=2]
+[ext_resource path="res://neuropol x rg.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Info Slide Song-[AudioTrimmer.com].wav" type="AudioStream" id=4]
+[ext_resource path="res://Button21.gd" type="Script" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 30
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 50
+font_data = ExtResource( 3 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -189.788
+margin_top = -59.9174
+margin_right = 1691.21
+margin_bottom = 863.083
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 8.55438
+margin_top = 291.333
+margin_right = 1383.55
+margin_bottom = 808.333
+custom_fonts/font = SubResource( 1 )
+text = "Chicken Pox:
+Chicken Pox is a highly contagious, though rarely lethal, virus 
+that affects the skin of those it infects. This leads to small 
+bumps and rashes, as well as possible nerve damage, and can 
+lead to future diseases like shingles. This is a common disease, 
+although its spread has slowed due to the introduction of a 
+vaccine that stops the virus from infecting people. The best way 
+to stop Chicken Pox is to get the vaccine before you have it, as 
+well as avoid those who are already infected. 
+
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Corona Virus" type="Sprite" parent="."]
+position = Vector2( 1108.15, 143.408 )
+scale = Vector2( 0.418028, 0.363967 )
+texture = ExtResource( 2 )
+
+[node name="Button" type="Button" parent="."]
+margin_left = 68.1619
+margin_top = 45.4413
+margin_right = 341.162
+margin_bottom = 149.441
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Button"]
+margin_left = 37.2311
+margin_top = 18.6156
+margin_right = 362.231
+margin_bottom = 135.616
+custom_fonts/font = SubResource( 2 )
+text = "Back"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="Button"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 326.084
+margin_top = 10.6655
+margin_right = 651.084
+margin_bottom = 127.666
+custom_fonts/font = SubResource( 2 )
+text = "(Backspace)"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label3" type="Label" parent="Button"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = -8.97394
+margin_top = 173.019
+margin_right = 866.026
+margin_bottom = 290.019
+custom_fonts/font = SubResource( 2 )
+text = "(Press enter to continue)"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+autoplay = true
+
+[node name="Button2" type="Button" parent="."]
+visible = false
+margin_right = 12.0
+margin_bottom = 20.0
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

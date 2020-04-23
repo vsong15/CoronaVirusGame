@@ -1,0 +1,258 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Main Menu Music-[AudioTrimmer.com].wav" type="AudioStream" id=1]
+[ext_resource path="res://HeadlinerNo45-59y8.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://OptionButton.gd" type="Script" id=3]
+[ext_resource path="res://PlayButton.gd" type="Script" id=4]
+[ext_resource path="res://HSlider2.gd" type="Script" id=5]
+[ext_resource path="res://HSlider.gd" type="Script" id=6]
+[ext_resource path="res://CheckBox2.gd" type="Script" id=7]
+[ext_resource path="res://Button3.gd" type="Script" id=8]
+
+[sub_resource type="DynamicFont" id=1]
+size = 100
+font_data = ExtResource( 2 )
+
+[node name="Node2D" type="Node"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+bus = "Reverb"
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+margin_left = -37.0
+margin_top = -43.0
+margin_right = 1373.0
+margin_bottom = 732.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OptionButton" type="OptionButton" parent="."]
+margin_left = 927.363
+margin_top = 37.9371
+margin_right = 956.363
+margin_bottom = 57.9371
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HSlider" type="HSlider" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -563.613
+margin_top = 260.028
+margin_right = 18.387
+margin_bottom = 289.028
+rect_scale = Vector2( 2, 2 )
+min_value = -80.0
+max_value = 0.0
+value = -40.0
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HSlider2" type="HSlider" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -567.884
+margin_top = 42.3307
+margin_right = 14.1163
+margin_bottom = 71.3307
+rect_scale = Vector2( 2, 2 )
+min_value = -1.0
+max_value = 1.0
+step = 0.1
+value = -1.0
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -191.957
+margin_top = -303.325
+margin_right = 228.043
+margin_bottom = -203.325
+custom_fonts/font = SubResource( 1 )
+text = "AUDIO SETTINGS"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -289.419
+margin_top = -32.0157
+margin_right = 379.581
+margin_bottom = 67.9843
+custom_fonts/font = SubResource( 1 )
+text = "Audio pan left  or right"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label3" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -406.537
+margin_top = 142.832
+margin_right = -235.537
+margin_bottom = 242.832
+custom_fonts/font = SubResource( 1 )
+text = "LOOP ?"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label4" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 94.0597
+margin_top = 143.097
+margin_right = 296.06
+margin_bottom = 243.097
+custom_fonts/font = SubResource( 1 )
+text = "REVERB"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_left = 249.444
+margin_top = 194.228
+margin_right = 685.444
+margin_bottom = 295.228
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="Button"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -157.507
+margin_top = -39.2721
+margin_right = 160.493
+margin_bottom = 60.7279
+custom_fonts/font = SubResource( 1 )
+text = "Play Sound"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button3" type="Button" parent="."]
+margin_left = 25.6028
+margin_top = 21.5491
+margin_right = 244.603
+margin_bottom = 123.549
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="Button3"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -74.9785
+margin_top = -39.2721
+margin_right = 243.022
+margin_bottom = 60.7279
+custom_fonts/font = SubResource( 1 )
+text = "BACK"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label3" type="Label" parent="Button3"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -95.0345
+margin_top = 63.5917
+margin_right = 463.965
+margin_bottom = 163.592
+rect_scale = Vector2( 0.5, 0.5 )
+custom_fonts/font = SubResource( 1 )
+text = "Press Backspace"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 689.528
+margin_top = 194.029
+margin_right = 1125.53
+margin_bottom = 295.029
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="Button2"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -182.5
+margin_top = -37.0
+margin_right = 179.5
+margin_bottom = 63.0
+custom_fonts/font = SubResource( 1 )
+text = "Stop Playing"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CheckBox" type="CheckBox" parent="."]
+anchor_left = 0.00137348
+anchor_top = 8.47711e-08
+anchor_right = 0.00137348
+anchor_bottom = 8.47711e-08
+margin_left = 458.113
+margin_top = 514.484
+margin_right = 482.113
+margin_bottom = 538.484
+rect_scale = Vector2( 3, 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CheckBox2" type="CheckBox" parent="."]
+margin_left = 985.749
+margin_top = 510.825
+margin_right = 1009.75
+margin_bottom = 534.825
+rect_scale = Vector2( 3, 3 )
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="item_selected" from="OptionButton" to="OptionButton" method="_on_OptionButton_item_selected"]
+[connection signal="value_changed" from="HSlider" to="HSlider" method="_on_HSlider_value_changed"]
+[connection signal="value_changed" from="HSlider2" to="HSlider2" method="_on_HSlider2_value_changed"]
+[connection signal="pressed" from="Button" to="Button" method="_on_Button_pressed"]
+[connection signal="toggled" from="Button3" to="Button3" method="_on_Button3_toggled"]
+[connection signal="pressed" from="Button2" to="Button" method="_on_Button2_pressed"]
+[connection signal="toggled" from="CheckBox2" to="CheckBox2" method="_on_CheckBox2_toggled"]

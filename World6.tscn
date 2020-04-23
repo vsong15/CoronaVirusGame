@@ -1,0 +1,181 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Black Plague.tscn" type="PackedScene" id=2]
+[ext_resource path="res://ZikaVirus.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Zombie.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Chicken.tscn" type="PackedScene" id=5]
+[ext_resource path="res://CancerCell.tscn" type="PackedScene" id=6]
+[ext_resource path="res://EvilPlayer.gd" type="Script" id=7]
+[ext_resource path="res://EvilPlayer.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Main Game Sound-[AudioTrimmer.com].wav" type="AudioStream" id=9]
+[ext_resource path="res://PauseScreen.tscn" type="PackedScene" id=10]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -177.849
+margin_top = -106.602
+margin_right = 1499.15
+margin_bottom = 837.398
+color = Color( 0.509804, 0.0745098, 0.34902, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 352.991, 328.345 )
+
+[node name="Zombie" parent="." instance=ExtResource( 4 )]
+position = Vector2( 6680.66, 1793.14 )
+
+[node name="Chicken" parent="." instance=ExtResource( 5 )]
+position = Vector2( -4856.47, -3012.54 )
+
+[node name="Black Plague" parent="." instance=ExtResource( 2 )]
+position = Vector2( 2508.79, -2523.65 )
+
+[node name="Node2D2" parent="." instance=ExtResource( 6 )]
+position = Vector2( -2390.31, 5247.24 )
+
+[node name="Zombie2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 674.703, 1229.95 )
+
+[node name="Node2D4" parent="." instance=ExtResource( 3 )]
+position = Vector2( 3912.85, 1253.27 )
+
+[node name="Zombie3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 6409.4, -785.679 )
+
+[node name="Node2D6" parent="." instance=ExtResource( 3 )]
+position = Vector2( 8727.05, 2485.26 )
+
+[node name="Chicken3" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1957.18, 1914.71 )
+
+[node name="Black Plague2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 4314.99, 331.223 )
+
+[node name="Node2D5" parent="." instance=ExtResource( 6 )]
+position = Vector2( 7420.21, 623.193 )
+
+[node name="Zombie4" parent="." instance=ExtResource( 4 )]
+position = Vector2( 2744.98, -887.465 )
+
+[node name="Node2D8" parent="." instance=ExtResource( 3 )]
+position = Vector2( 6727.21, 3847.73 )
+
+[node name="Chicken4" parent="." instance=ExtResource( 5 )]
+position = Vector2( 2245.07, 582.361 )
+
+[node name="Black Plague3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 3187.3, 4751.53 )
+
+[node name="Node2D7" parent="." instance=ExtResource( 6 )]
+position = Vector2( 4116.1, -1593.44 )
+
+[node name="Zombie5" parent="." instance=ExtResource( 4 )]
+position = Vector2( 3631.1, -3801 )
+
+[node name="Node2D10" parent="." instance=ExtResource( 3 )]
+position = Vector2( 3467.81, -2565.7 )
+
+[node name="Chicken5" parent="." instance=ExtResource( 5 )]
+position = Vector2( 4287.86, -2405.03 )
+
+[node name="Black Plague4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1115.7, -1496.61 )
+
+[node name="Node2D9" parent="." instance=ExtResource( 6 )]
+position = Vector2( 1267.67, -3317.61 )
+
+[node name="Zombie6" parent="." instance=ExtResource( 4 )]
+position = Vector2( -2995.91, -2747.64 )
+
+[node name="Node2D12" parent="." instance=ExtResource( 3 )]
+position = Vector2( -732.983, -662.111 )
+
+[node name="Chicken6" parent="." instance=ExtResource( 5 )]
+position = Vector2( -5757.23, -480.238 )
+
+[node name="Black Plague5" parent="." instance=ExtResource( 2 )]
+position = Vector2( -1341.54, -3344.19 )
+
+[node name="Node2D11" parent="." instance=ExtResource( 6 )]
+position = Vector2( -2805.1, 3747.3 )
+
+[node name="Zombie7" parent="." instance=ExtResource( 4 )]
+position = Vector2( 5441.54, 295.402 )
+
+[node name="Node2D14" parent="." instance=ExtResource( 3 )]
+position = Vector2( 5136.93, 2674.34 )
+
+[node name="Chicken7" parent="." instance=ExtResource( 5 )]
+position = Vector2( -4756.83, 1237.84 )
+
+[node name="Black Plague6" parent="." instance=ExtResource( 2 )]
+position = Vector2( 288.759, -4160.37 )
+
+[node name="Node2D13" parent="." instance=ExtResource( 6 )]
+position = Vector2( -1560.66, -2157.74 )
+
+[node name="Zombie8" parent="." instance=ExtResource( 4 )]
+position = Vector2( 3291.82, 2641.58 )
+
+[node name="Node2D16" parent="." instance=ExtResource( 3 )]
+position = Vector2( -502.166, -2665.83 )
+
+[node name="Chicken8" parent="." instance=ExtResource( 5 )]
+position = Vector2( -141.001, 4589.36 )
+
+[node name="Black Plague7" parent="." instance=ExtResource( 2 )]
+position = Vector2( 5974.99, -2356.29 )
+
+[node name="Node2D15" parent="." instance=ExtResource( 6 )]
+position = Vector2( 4670.93, 4397.25 )
+
+[node name="Zombie18" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1064.17, 2641.58 )
+
+[node name="Node2D36" parent="." instance=ExtResource( 3 )]
+position = Vector2( -47.9612, 2179.79 )
+
+[node name="Chicken18" parent="." instance=ExtResource( 5 )]
+position = Vector2( -3328.6, 1188.58 )
+
+[node name="Black Plague8" parent="." instance=ExtResource( 2 )]
+position = Vector2( -1338.45, 3073.11 )
+
+[node name="Node2D35" parent="." instance=ExtResource( 6 )]
+position = Vector2( 2144.01, 3979.3 )
+
+[node name="Zombie17" parent="." instance=ExtResource( 4 )]
+position = Vector2( -1334.78, 1753.01 )
+
+[node name="Node2D34" parent="." instance=ExtResource( 3 )]
+position = Vector2( -2296.31, 1270.05 )
+
+[node name="Chicken17" parent="." instance=ExtResource( 5 )]
+position = Vector2( 9075.99, 1308.66 )
+
+[node name="Black Plague9" parent="." instance=ExtResource( 2 )]
+position = Vector2( -4367.99, -1547.45 )
+
+[node name="Node2D33" parent="." instance=ExtResource( 6 )]
+position = Vector2( -2859.61, -1017.46 )
+
+[node name="Chicken13" parent="." instance=ExtResource( 5 )]
+position = Vector2( -5042.77, 3050.94 )
+
+[node name="Node2D" parent="." instance=ExtResource( 8 )]
+position = Vector2( -9654.4, 147.189 )
+script = ExtResource( 7 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+autoplay = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PauseScreen" parent="CanvasLayer" instance=ExtResource( 10 )]
+visible = false

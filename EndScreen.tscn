@@ -1,0 +1,147 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Title_GameOver.import.png" type="Texture" id=1]
+[ext_resource path="res://therestartbutton.png" type="Texture" id=2]
+[ext_resource path="res://Button.gd" type="Script" id=3]
+[ext_resource path="res://Loss Song-[AudioTrimmer.com].wav" type="AudioStream" id=4]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Game Over"
+tracks/0/type = "value"
+tracks/0/path = NodePath("GameOverCanvasLayer/BackDropColorRect:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray(  ),
+"transitions": PoolRealArray(  ),
+"update": 1,
+"values": [  ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("GameOverCanvasLayer/BackDropColorRect:color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray(  ),
+"transitions": PoolRealArray(  ),
+"update": 0,
+"values": [  ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("GameOverCanvasLayer/BackDropColorRect/TextureRect:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray(  ),
+"transitions": PoolRealArray(  ),
+"update": 0,
+"values": [  ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("BackDropColorRect:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0.1, 0.4, 0.7, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0.215686 ), Color( 1, 1, 1, 0.392157 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("BackDropColorRect:show_behind_parent")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0.1 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "Transition End Screen"
+tracks/0/type = "value"
+tracks/0/path = NodePath("GameOverCanvasLayer/BackDropColorRect:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+
+[node name="Node2D" type="Control"]
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GameOverCanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="GameOverCanvasLayer"]
+"anims/Game Over" = SubResource( 1 )
+"anims/Transition End Screen" = SubResource( 2 )
+
+[node name="BackDropColorRect" type="ColorRect" parent="GameOverCanvasLayer"]
+show_behind_parent = true
+anchor_left = 0.00317729
+anchor_top = -0.00542257
+anchor_right = 1.00318
+anchor_bottom = 0.994577
+margin_left = -16.2535
+margin_top = 0.253542
+margin_right = 40.7437
+margin_bottom = 40.2538
+color = Color( 0.372549, 0.101961, 0.101961, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="GameOverCanvasLayer/BackDropColorRect"]
+modulate = Color( 0.968627, 0, 0, 1 )
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -369.29
+margin_top = 198.055
+margin_right = 363.71
+margin_bottom = 317.055
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect2" type="TextureRect" parent="GameOverCanvasLayer/BackDropColorRect"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -302.79
+margin_top = -265.055
+margin_right = 297.21
+margin_bottom = -198.055
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="GameOverCanvasLayer/BackDropColorRect/TextureRect2"]
+visible = false
+margin_right = 330.0
+margin_bottom = 65.0
+script = ExtResource( 3 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+autoplay = true

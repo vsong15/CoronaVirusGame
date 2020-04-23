@@ -1,0 +1,109 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Button3.gd" type="Script" id=1]
+[ext_resource path="res://Black Plague.png" type="Texture" id=2]
+[ext_resource path="res://neuropol x rg.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Info Slide Song-[AudioTrimmer.com].wav" type="AudioStream" id=4]
+[ext_resource path="res://Button23.gd" type="Script" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 30
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 50
+font_data = ExtResource( 3 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -188.311
+margin_top = -63.3422
+margin_right = 1692.68
+margin_bottom = 859.658
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 8.55438
+margin_top = 291.333
+margin_right = 1383.55
+margin_bottom = 808.333
+custom_fonts/font = SubResource( 1 )
+text = "Zika Virus:
+The Plague is caused by bacteria spread from small rodents and 
+mammals. It is best known for killing millions of people in Europe 
+during the 1300’s. However, it has made a comeback in certain 
+countries that exposed their people to many sick rodents and 
+animals. This is a serious condition which needs a medical 
+professionals help, as well as plenty of antibiotics. Both of these 
+work best however, by seeking attention as early as possible. 
+
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Corona Virus" type="Sprite" parent="."]
+position = Vector2( 1073.7, 196.408 )
+scale = Vector2( 0.418028, 0.363967 )
+texture = ExtResource( 2 )
+
+[node name="Button" type="Button" parent="."]
+margin_left = 68.1619
+margin_top = 45.4413
+margin_right = 341.162
+margin_bottom = 149.441
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Button"]
+margin_left = 37.2311
+margin_top = 18.6156
+margin_right = 362.231
+margin_bottom = 135.616
+custom_fonts/font = SubResource( 2 )
+text = "Back"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="Button"]
+modulate = Color( 0.0313726, 0.00784314, 0.00784314, 1 )
+margin_left = 307.788
+margin_top = 17.1502
+margin_right = 749.788
+margin_bottom = 134.151
+custom_fonts/font = SubResource( 2 )
+text = "(Backspace)"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label3" type="Label" parent="Button"]
+modulate = Color( 0.0313726, 0.00784314, 0.00784314, 1 )
+margin_left = 296.043
+margin_top = 187.456
+margin_right = 738.043
+margin_bottom = 304.457
+custom_fonts/font = SubResource( 2 )
+text = "(Click to start)"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+autoplay = true
+
+[node name="Button2" type="Button" parent="."]
+margin_right = 12.0
+margin_bottom = 20.0
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

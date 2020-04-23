@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Chicken.gd" type="Script" id=1]
+[ext_resource path="res://Chicken Pox.png" type="Texture" id=2]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 150.0
+
+[node name="Chicken" type="KinematicBody2D"]
+scale = Vector2( 0.15, 0.15 )
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 45.4158, -88.6718 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+modulate = Color( 0.25098, 0.298039, 0.537255, 1 )
+position = Vector2( 13.6132, 14.7793 )
+shape = SubResource( 1 )
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2( 11.6663, -6.53784 )
+enabled = true
+cast_to = Vector2( 300, 0 )
